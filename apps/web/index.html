@@ -1,0 +1,25 @@
+<!--
+  index.html
+  Browser entry document for the Matam Al-Showaikh booking application.
+-->
+<!doctype html>
+<html lang="ar" dir="rtl">
+  <head>
+    <!-- Define document metadata and native browser colors before application startup. -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#069dcc" />
+    <meta name="description" content="نظام حجز مأتم الشويخ" />
+    <link rel="icon" type="image/png" href="/src/assets/matam-logo-transparent.png" />
+
+    <!-- Warm the font origins to reduce visible font swapping on the first visit. -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <title>حجز مأتم الشويخ</title>
+  </head>
+  <body>
+    <!-- React owns the single application root and loads from Vite's module entry. -->
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
