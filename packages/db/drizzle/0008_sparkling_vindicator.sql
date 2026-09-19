@@ -1,0 +1,1 @@
+ALTER TABLE "bookings" ADD COLUMN "include_female_hall" boolean DEFAULT false NOT NULL;
