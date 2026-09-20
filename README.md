@@ -83,7 +83,6 @@ cd matam-alshowaikh-booking
 pnpm install
 docker compose up -d
 pnpm --filter @matam/db migrate
-pnpm --filter @matam/api seed:admin
 pnpm dev
 ```
 
