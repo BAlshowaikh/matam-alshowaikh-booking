@@ -2,6 +2,8 @@
 
 A bilingual booking platform for Matam Al-Showaikh in Bahrain. Visitors can check availability on a dual Hijri/Gregorian calendar and submit booking requests without an account. Administrators can review bookings, block periods, manage Hijri corrections, configure the booking horizon, manage administrator accounts, and inspect the audit history.
 
+Deployment status: not published yet.
+
 ## Contents
 
 - [Features](#features)
@@ -14,6 +16,8 @@ A bilingual booking platform for Matam Al-Showaikh in Bahrain. Visitors can chec
 - [Common commands](#common-commands)
 - [Production setup](#production-setup)
 - [Troubleshooting](#troubleshooting)
+- [Project references](#project-references)
+- [Future enhancements](#future-enhancements)
 
 ## Features
 
@@ -301,6 +305,19 @@ Only run it when a complete local reset is intentional. Start PostgreSQL, rerun 
 - React, Vite, and Tailwind CSS
 - react-i18next
 - pnpm workspaces
+
+## Project references
+
+- [Project repository](https://github.com/BAlshowaikh/matam-alshowaikh-booking)
+- [Fastify](https://fastify.dev/)
+- [Drizzle ORM](https://orm.drizzle.team/)
+- [React](https://react.dev/)
+
+## Future enhancements
+
+- Deploy the system and configure automated backups
+- Add automated test coverage
+- Add an administrator password-reset workflow
 
 ## License and credits
 
