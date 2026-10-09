@@ -7,6 +7,7 @@ import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
 import { applyDocumentLanguage } from "../../i18n";
 import logo from "../../assets/matam-logo-transparent.png";
+import Footer from "../components/Footer";
 
 const LANDING_COPY = {
   ar: { title: "نظام حجوزات مأتم الشويخ", guest: "المتابعة كزائر", guestHelp: "حجز المأتم أو متابعة طلب سابق", admin: "المتابعة كإداري", adminHelp: "الدخول إلى لوحة الإدارة", language: "English" },
@@ -27,7 +28,7 @@ export default function LandingPage() {
   };
 
   // Introduce the brand before offering clearly separated guest and staff paths.
-  return <main id="main-content" className="entry-page" tabIndex={-1}>
+  return <><main id="main-content" className="entry-page" tabIndex={-1}>
     <button type="button" className="entry-language" onClick={toggleLanguage}>{copy.language}</button>
     <section className="entry-content" aria-labelledby="entry-title">
       <div className="entry-visual"><div className="entry-glow" aria-hidden="true" /><div className="entry-logo-wrap"><img src={logo} alt="" /></div></div>
@@ -37,5 +38,5 @@ export default function LandingPage() {
         <Link className="entry-option admin" to="/admin"><span className="entry-icon" aria-hidden="true">◇</span><div><strong>{copy.admin}</strong><small>{copy.adminHelp}</small></div><b aria-hidden="true">←</b></Link>
       </div>
     </section>
-  </main>;
+  </main><Footer /></>;
 }
